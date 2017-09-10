@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_1c5b558996df45299d52a378d8080cc7 {
+            <style> #map_9a3c4e42d6044792913d587d0eb22153 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -31,7 +31,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_1c5b558996df45299d52a378d8080cc7" ></div>
+            <div class="folium-map" id="map_9a3c4e42d6044792913d587d0eb22153" ></div>
         
 </body>
 <script>    
@@ -43,8 +43,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_1c5b558996df45299d52a378d8080cc7 = L.map(
-                                  'map_1c5b558996df45299d52a378d8080cc7',
+            var map_9a3c4e42d6044792913d587d0eb22153 = L.map(
+                                  'map_9a3c4e42d6044792913d587d0eb22153',
                                   {center: [38.58,-99.09],
                                   zoom: 6,
                                   maxBounds: bounds,
@@ -55,7 +55,7 @@
             
         
     
-            var tile_layer_0f6ec4e119ac438296c989da60c6db50 = L.tileLayer(
+            var tile_layer_83b3b83dbb574a5bba3eafdc3c6963f3 = L.tileLayer(
                 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -65,7 +65,40 @@
                     attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
                     detectRetina: false
                     }
-                ).addTo(map_1c5b558996df45299d52a378d8080cc7);
+                ).addTo(map_9a3c4e42d6044792913d587d0eb22153);
 
+        
+    
+
+            var marker_2a91aebc7aa64856b1e4532600e0b192 = L.marker(
+                [38.2,-99.1],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9a3c4e42d6044792913d587d0eb22153);
+            
+    
+
+                var icon_ee9ee2ae4a574454be60a857b34711bf = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2a91aebc7aa64856b1e4532600e0b192.setIcon(icon_ee9ee2ae4a574454be60a857b34711bf);
+            
+    
+            var popup_69fbb8940abf491bbaa81c559598e0ae = L.popup({maxWidth: '300'});
+
+            
+                var html_5fc26159b5244968b7dbdf3e00bedf57 = $('<div id="html_5fc26159b5244968b7dbdf3e00bedf57" style="width: 100.0%; height: 100.0%;">Hi, I am a Marker</div>')[0];
+                popup_69fbb8940abf491bbaa81c559598e0ae.setContent(html_5fc26159b5244968b7dbdf3e00bedf57);
+            
+
+            marker_2a91aebc7aa64856b1e4532600e0b192.bindPopup(popup_69fbb8940abf491bbaa81c559598e0ae);
+
+            
         
 </script>
